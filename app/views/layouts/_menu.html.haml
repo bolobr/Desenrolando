@@ -1,0 +1,19 @@
+%ul.flexnav{"data-breakpoint" => "800"}
+  %li
+    %a{onclick: "callFunction();", href: "#"}
+      Mural
+  %li
+    %a{onclick: "callFunction();", href: "#guia"}
+      Guia de Sobrevivência
+  %li
+    %a{onclick: "callFunction();", href: "#festas"}
+      Party Rock
+  %li
+    %a{onclick: "callFunction();", href: "#materiais"}
+      Materiais
+
+:javascript
+  $(".flexnav").flexNav();
+  function callFunction(){
+      console.log("teste");
+  }

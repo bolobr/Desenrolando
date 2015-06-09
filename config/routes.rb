@@ -54,11 +54,18 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  devise_scope :user do
+    get "/login" => "devise/sessions#new"
+    get "/cadastro" => "devise/registrations#new"
+    get "/users/sign_out" => "devise/sessions#destroy"
+  end
 
-  GET '/mural' => 'pages#mural', as: "mural"
-  GET '/guia' => 'pages#survival_guide', as: "guide"
-  GET '/festas' => 'pages#party_rock', as: "party"
-  GET '/materiais' => 'pages#material', as: "material"
 
-  root to: "pages#mural"
+  get '/mural' => 'pages#index', as: "index"
+  post '/mural' => 'pages#mural', as: "mural"
+  post '/guia' => 'pages#survival_guide', as: "guide"
+  post '/festas' => 'pages#party_rock', as: "party"
+  post '/materiais' => 'pages#material', as: "material"
+
+  root to: "pages#index"
 end
