@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 gem 'bson_ext'
-gem 'devise'
+gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
 gem 'haml'
 gem 'haml-rails'
 

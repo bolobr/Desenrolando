@@ -55,5 +55,10 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  root to: "home#index"
+  GET '/mural' => 'pages#mural', as: "mural"
+  GET '/guia' => 'pages#survival_guide', as: "guide"
+  GET '/festas' => 'pages#party_rock', as: "party"
+  GET '/materiais' => 'pages#material', as: "material"
+
+  root to: "pages#mural"
 end
