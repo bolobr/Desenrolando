@@ -15,3 +15,4 @@
 //= require turbolinks
 //= require_tree
 //= require plugins/jquery.flexnav.min
+//= require plugins/bootstrap.min.js

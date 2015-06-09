@@ -8,6 +8,7 @@ gem 'bson_ext'
 gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
 gem 'haml'
 gem 'haml-rails'
+gem "therubyracer"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

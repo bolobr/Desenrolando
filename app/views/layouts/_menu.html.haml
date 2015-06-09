@@ -1,16 +1,29 @@
-%ul.flexnav{"data-breakpoint" => "800"}
-  %li
-    %a{onclick: "callFunction();", href: "#"}
-      Mural
-  %li
-    %a{onclick: "callFunction();", href: "#guia"}
-      Guia de Sobrevivência
-  %li
-    %a{onclick: "callFunction();", href: "#festas"}
-      Party Rock
-  %li
-    %a{onclick: "callFunction();", href: "#materiais"}
-      Materiais
+.container
+  .row
+    %ul.flexnav{"data-breakpoint" => "800"}
+      %li
+        %a{onclick: "callFunction();", href: "#"}
+          Mural
+      %li
+        %a{onclick: "callFunction();", href: "#guia"}
+          Guia de Sobrevivência
+      %li
+        %a{onclick: "callFunction();", href: "#festas"}
+          Party Rock
+      %li
+        %a{onclick: "callFunction();", href: "#materiais"}
+          Materiais
+
+.container
+  .row
+    .col-md-2
+      Teste
+    .col-md-4
+      Teste
+    .col-md-2
+      teste
+    / /.navbar-collapse
+  / /.container-fluid
 
 :javascript
   $(".flexnav").flexNav();
